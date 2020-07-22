@@ -1,0 +1,55 @@
+﻿<Controls:MetroWindow x:Class="Dr_HHU.View.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Dr_HHU.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" Icon="/Dr_HHU;component/Resources/About.ico"
+        Title="关于" Height="420" Width="300">
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <Label x:Name="Version" Content="河海大学Dr.COM第三方客户端1.0.0.005"/>
+            <TextBlock x:Name="Copyright" TextWrapping="Wrap" Margin="5,10,0,5">
+                免责声明：<LineBreak/>
+                本软件以 GPL-3.0 协议授权，并仅供内部学习交流使用。
+                本软件仅以“原样”提供，使用本软件造成的任何后果，
+                包括但不限于经济损失、法律责任，均由使用者承担，
+                作者不承担任何责任。<LineBreak/><LineBreak/>
+                <Run FontSize="9"> THE SOFTWARE IS PROVIDED 
+                    "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+                    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+                    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+                    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+                    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+                    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES 
+                    OR OTHER LIABILITY, WHETHER IN AN ACTION 
+                    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR 
+                    THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                </Run><LineBreak/><LineBreak/>
+                开源组件：<LineBreak/>
+                <Hyperlink NavigateUri="https://github.com/Fody/Costura/" 
+                           RequestNavigate="Hyperlink_RequestNavigate">Costura</Hyperlink> | 
+                <Hyperlink NavigateUri="http://logging.apache.org/log4net/" 
+                           RequestNavigate="Hyperlink_RequestNavigate">Log4Net</Hyperlink> | 
+                <Hyperlink NavigateUri="https://github.com/MahApps/MahApps.Metro" 
+                           RequestNavigate="Hyperlink_RequestNavigate">MahApps.Metro</Hyperlink> | 
+                <LineBreak/><LineBreak/>
+                参考项目：<LineBreak/>
+                <Hyperlink NavigateUri="https://github.com/GDUT-Drcom/Drcom-Dialer" 
+                           RequestNavigate="Hyperlink_RequestNavigate">GDUT-Drcom</Hyperlink> | 
+                <Hyperlink NavigateUri="https://github.com/yang-er/jlu-drcom-csharp" 
+                           RequestNavigate="Hyperlink_RequestNavigate">jlu-drcom-csharp</Hyperlink> | 
+                <Hyperlink NavigateUri="https://github.com/ly0/jlu-drcom-client" 
+                           RequestNavigate="Hyperlink_RequestNavigate">Jlu-drcom-client</Hyperlink> |
+                <Hyperlink NavigateUri="https://github.com/drcoms/drcom-generic"
+                           RequestNavigate="Hyperlink_RequestNavigate">drcom-generic</Hyperlink> |
+                <LineBreak/>
+                <Hyperlink NavigateUri="DR_HHU.log"
+                           RequestNavigate="Hyperlink_File">程序日志</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
